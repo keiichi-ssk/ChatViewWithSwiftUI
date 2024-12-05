@@ -9,7 +9,13 @@ import SwiftUI
 
 struct MessageRow: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Circle()
+                .frame(width: 60, height: 60)
+            Capsule()
+                .frame(height: 60)
+        }
+        .padding(.bottom)
     }
 }
 
